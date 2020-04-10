@@ -26,10 +26,13 @@ export default function Index() {
                 {item.companies.map(i => (
                     <div>
                         <h2>{i.title}</h2> 
-                        {i.text.map(x => (
-                            <p>{x.paragraph}</p>  
-                            )
-                        )}
+                        {i.text.map(x => {
+                          const paragraph = <p dangerouslySetInnerHTML={{__html: x.paragraph}}></p>
+                          return (
+                            <div>{paragraph}</div>
+                          )
+                        }
+                      )}
                     </div>
                     )
                 )}
