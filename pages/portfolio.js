@@ -19,6 +19,7 @@ export default function Index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Logo />
+      <Nav />
       {data.map(item => (
             <Content>
                 <h1>{item.title}</h1>
@@ -34,6 +35,20 @@ export default function Index() {
                 )}
           </Content>
         ))}
+        <style jsx global>{`
+        html,
+        body {
+          padding: 0;
+          margin: 0;
+          font-family: Courier, Helvetica Neue, sans-serif;
+          background-color: #000;
+          color: #fff;
+        }
+  
+        * {
+          box-sizing: border-box;
+        }
+      `}</style>
     </>
   )
 }
@@ -42,7 +57,7 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem 10rem;
+  padding: 1rem 20rem;
   font-family: Courier, Helvetica Neue, sans-serif;
   h1 {
     padding: 5rem 0 0 0;
