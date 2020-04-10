@@ -15,7 +15,7 @@ const defaultConfig = {
   splatRadius: 0.005
 };
 
-export default class App extends Component {
+export default class Home extends Component {
   state = {
     config: {
       ...defaultConfig
@@ -76,13 +76,10 @@ export default class App extends Component {
               fontSize: "6em",
             }}
           >
-            _Good_{greeting()}
+            _Good_{greeting()}.
           </h1>
         </div>
       </div>
-      <footer>
-      
-      </footer>
   
       <style jsx global>{`
         html,
@@ -173,7 +170,6 @@ export default class App extends Component {
       </>
     );
   }
-
   
   _animationRef = ref => {
     this._animation = ref;
