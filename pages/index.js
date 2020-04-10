@@ -81,7 +81,7 @@ export default class App extends Component {
           padding: 0;
           margin: 0;
           font-family: Courier, Helvetica Neue, sans-serif;
-          background-color: black;
+          background-color: #000;
           color: #fff;
         }
   
@@ -96,7 +96,7 @@ export default class App extends Component {
           /* Our sidebar item styling */
           text-decoration: none;
           margin-bottom: 10px;
-          color: #fff;
+          color: #000;
           transition: color 0.2s;
         }
 
@@ -107,7 +107,7 @@ export default class App extends Component {
 
         /* Change color on hover */
         .bm-item:hover {
-          color: white;
+          color: #31deff;
         }
 
         /* The rest copied directly from react-burger-menu docs */
@@ -123,7 +123,7 @@ export default class App extends Component {
 
         /* Color/shape of burger icon bars */
         .bm-burger-bars {
-          background: #31deff;
+          background: #fff;
         }
 
         /* Position and sizing of clickable cross button */
@@ -139,7 +139,7 @@ export default class App extends Component {
 
         /* General sidebar styles */
         .bm-menu {
-          background: #31deff;
+          background: #fff;
           padding: 2.5em 1.5em 0;
           font-size: 1.15em;
           padding: 2rem 2rem 1.5rem 2rem;
