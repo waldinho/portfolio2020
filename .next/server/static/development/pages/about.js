@@ -149,6 +149,8 @@ const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
     p {
         position: relative;
         top: -1rem;
+        font-family: Courier, Helvetica Neue, sans-serif;
+        color: #fff;
     }
 }
 `;
@@ -261,59 +263,41 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const fetcher = query => fetch('/api/about', {
-  method: 'POST',
-  headers: {
-    'Content-type': 'application/json'
-  },
-  body: JSON.stringify({
-    query
-  })
-}).then(res => res.json()).then(json => json.data);
+const fetcher = url => fetch(url).then(res => res.json());
 
 function Index() {
   const {
     data,
     error
-  } = swr__WEBPACK_IMPORTED_MODULE_1___default()('{ about { title, text } }', fetcher);
+  } = swr__WEBPACK_IMPORTED_MODULE_1___default()('/api/about', fetcher);
   if (error) return __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 12,
       columnNumber: 21
     }
-  }, "Failed to load");
+  }, "Failed to load users");
   if (!data) return __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 13,
       columnNumber: 21
     }
   }, "Loading...");
-  const {
-    about
-  } = data;
-  return __jsx("div", {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 5
-    }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 17,
       columnNumber: 7
     }
   }, __jsx("title", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 18,
       columnNumber: 9
     }
   }, "James Waller | Digital"), __jsx("link", {
@@ -322,36 +306,54 @@ function Index() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 19,
       columnNumber: 9
     }
-  })), about.map((item, i) => __jsx(Content, {
+  })), __jsx(_components_Logo__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 9
+      lineNumber: 21,
+      columnNumber: 7
     }
-  }, __jsx("h1", {
-    key: item.title,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 13
-    }
-  }, item.title), __jsx("div", {
-    key: item.text,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35,
-      columnNumber: 13
-    }
-  }, item.text))));
+  }), data.map(item => {
+    console.log('item: ', item);
+    return __jsx(Content, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 11
+      }
+    }, __jsx("h1", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 13
+      }
+    }, item.title), item.paragraph.map(i => {
+      console.log('i: ', i);
+      return __jsx("p", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 17
+        }
+      }, i.text);
+    }));
+  }));
 }
 const Content = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div`
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 10rem;
+  font-family: Courier, Helvetica Neue, sans-serif;
+  h1 {
+    padding: 5rem 0 0 0;
+  }
 }
 `;
 

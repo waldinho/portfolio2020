@@ -23,6 +23,8 @@ const Wrapper = styled.div`
     p {
         position: relative;
         top: -1rem;
+        font-family: Courier, Helvetica Neue, sans-serif;
+        color: #fff;
     }
 }
 `

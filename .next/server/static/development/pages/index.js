@@ -149,6 +149,8 @@ const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
     p {
         position: relative;
         top: -1rem;
+        font-family: Courier, Helvetica Neue, sans-serif;
+        color: #fff;
     }
 }
 `;

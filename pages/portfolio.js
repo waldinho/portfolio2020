@@ -1,45 +1,51 @@
-import useSWR from 'swr'
+import useSwr from 'swr'
 import Head from 'next/head'
 import styled from 'styled-components';
 import Logo from '../components/Logo'
 import Nav from '../components/Nav'
 
-const fetcher = query =>
-  fetch('/api/portfolio', {
-    method: 'POST',
-    headers: {
-      'Content-type': 'application/json',
-    },
-    body: JSON.stringify({ query }),
-  })
-    .then(res => res.json())
-    .then(json => json.data)
+const fetcher = url => fetch(url).then(res => res.json())
 
 export default function Index() {
-  const { data, error } = useSWR('{ portfolio { title, text } }', fetcher)
+  const { data, error } = useSwr('/api/portfolio', fetcher)
 
-  if (error) return <div>Failed to load</div>
+  if (error) return <div>Failed to load users</div>
   if (!data) return <div>Loading...</div>
 
-  const { portfolio } = data
-
   return (
-    <div>
+    <>
       <Head>
         <title>James Waller | Digital</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {portfolio.map((item, i) => (
-        <Content>
-            <h1 key={item.title}>{item.title}</h1>
-            <div key={item.text}>{item.text}</div>
-        </Content>
-      ))}
-    </div>
+      <Logo />
+      {data.map(item => (
+            <Content>
+                <h1>{item.title}</h1>
+                {item.companies.map(i => (
+                    <div>
+                        <h2>{i.title}</h2> 
+                        {i.text.map(x => (
+                            <p>{x.paragraph}</p>  
+                            )
+                        )}
+                    </div>
+                    )
+                )}
+          </Content>
+        ))}
+    </>
   )
 }
 
 const Content = styled.div`
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 10rem;
+  font-family: Courier, Helvetica Neue, sans-serif;
+  h1 {
+    padding: 5rem 0 0 0;
+  }
 }
 `;

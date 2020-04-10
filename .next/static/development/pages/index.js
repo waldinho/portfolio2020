@@ -21,7 +21,7 @@ var _this = undefined,
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    position: absolute;\n    padding: 1rem 2rem 0rem 2rem;\n    z-index: 9;\n    h1 {\n        font-family: Impact;\n        font-size: 4.25rem;   \n        line-height: 0;\n        color: #4fec8e;\n    }\n    p {\n        position: relative;\n        top: -1rem;\n    }\n}\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    position: absolute;\n    padding: 1rem 2rem 0rem 2rem;\n    z-index: 9;\n    h1 {\n        font-family: Impact;\n        font-size: 4.25rem;   \n        line-height: 0;\n        color: #4fec8e;\n    }\n    p {\n        position: relative;\n        top: -1rem;\n        font-family: Courier, Helvetica Neue, sans-serif;\n        color: #fff;\n    }\n}\n"]);
 
   _templateObject = function _templateObject() {
     return data;

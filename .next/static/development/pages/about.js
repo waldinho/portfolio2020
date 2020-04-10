@@ -21,7 +21,7 @@ var _this = undefined,
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    position: absolute;\n    padding: 1rem 2rem 0rem 2rem;\n    z-index: 9;\n    h1 {\n        font-family: Impact;\n        font-size: 4.25rem;   \n        line-height: 0;\n        color: #4fec8e;\n    }\n    p {\n        position: relative;\n        top: -1rem;\n    }\n}\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    position: absolute;\n    padding: 1rem 2rem 0rem 2rem;\n    z-index: 9;\n    h1 {\n        font-family: Impact;\n        font-size: 4.25rem;   \n        line-height: 0;\n        color: #4fec8e;\n    }\n    p {\n        position: relative;\n        top: -1rem;\n        font-family: Courier, Helvetica Neue, sans-serif;\n        color: #fff;\n    }\n}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -16106,7 +16106,7 @@ var _jsxFileName = "/Users/jameswaller/2020-portfolio/pages/about.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n}\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  padding: 1rem 10rem;\n  font-family: Courier, Helvetica Neue, sans-serif;\n  h1 {\n    padding: 5rem 0 0 0;\n  }\n}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -16121,65 +16121,47 @@ function _templateObject() {
 
 
 
-var fetcher = function fetcher(query) {
-  return fetch('/api/about', {
-    method: 'POST',
-    headers: {
-      'Content-type': 'application/json'
-    },
-    body: JSON.stringify({
-      query: query
-    })
-  }).then(function (res) {
+var fetcher = function fetcher(url) {
+  return fetch(url).then(function (res) {
     return res.json();
-  }).then(function (json) {
-    return json.data;
   });
 };
 
 function Index() {
   var _this = this;
 
-  var _useSWR = Object(swr__WEBPACK_IMPORTED_MODULE_2__["default"])('{ about { title, text } }', fetcher),
-      data = _useSWR.data,
-      error = _useSWR.error;
+  var _useSwr = Object(swr__WEBPACK_IMPORTED_MODULE_2__["default"])('/api/about', fetcher),
+      data = _useSwr.data,
+      error = _useSwr.error;
 
   if (error) return __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 12,
       columnNumber: 21
     }
-  }, "Failed to load");
+  }, "Failed to load users");
   if (!data) return __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 13,
       columnNumber: 21
     }
   }, "Loading...");
-  var about = data.about;
-  return __jsx("div", {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 5
-    }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 17,
       columnNumber: 7
     }
   }, __jsx("title", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 18,
       columnNumber: 9
     }
   }, "James Waller | Digital"), __jsx("link", {
@@ -16188,34 +16170,43 @@ function Index() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 19,
       columnNumber: 9
     }
-  })), about.map(function (item, i) {
+  })), __jsx(_components_Logo__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 7
+    }
+  }), data.map(function (item) {
+    console.log('item: ', item);
     return __jsx(Content, {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33,
-        columnNumber: 9
+        lineNumber: 25,
+        columnNumber: 11
       }
     }, __jsx("h1", {
-      key: item.title,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34,
+        lineNumber: 26,
         columnNumber: 13
       }
-    }, item.title), __jsx("div", {
-      key: item.text,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 35,
-        columnNumber: 13
-      }
-    }, item.text));
+    }, item.title), item.paragraph.map(function (i) {
+      console.log('i: ', i);
+      return __jsx("p", {
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 17
+        }
+      }, i.text);
+    }));
   }));
 }
 var Content = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject());
