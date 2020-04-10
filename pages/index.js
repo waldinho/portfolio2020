@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import React, { Component } from "react";
-import DatGui, { DatNumber, DatSelect, DatButton } from "react-dat-gui";
 import FluidAnimation from "react-fluid-animation";
 import random from "random";
 import Logo from '../components/Logo'
@@ -29,7 +28,17 @@ export default class App extends Component {
 
   render() {
     const { config } = this.state;
- 
+    const greeting = () => {
+      const today = new Date()
+      const curHr = today.getHours()
+      if (curHr < 12) {
+          return 'morning'  
+      } else if (curHr < 17) {
+          return 'afternoon'  
+      } else {
+          return 'evening'
+      }
+    }
     return (
       <>
       <Head>
@@ -67,7 +76,7 @@ export default class App extends Component {
               fontSize: "6em",
             }}
           >
-            _Hello
+            _Good_{greeting()}
           </h1>
         </div>
       </div>
