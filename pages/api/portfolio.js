@@ -3,6 +3,63 @@ const portfolio = [{
         companies: [
             {
                 id: 1,
+                title: "Hit Network",
+                url: "/hit-network",
+                text: [
+                    {
+                        id: 1,
+                        paragraph: "Hit Network - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                    },
+                    {
+                        id: 2,
+                        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                    },
+                    {
+                        id: 3,
+                        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                    }
+                ]
+            },
+            {
+                id: 1,
+                title: "Triple M",
+                url: "/triple-m",
+                text: [
+                    {
+                        id: 1,
+                        paragraph: "Triple M - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                    },
+                    {
+                        id: 2,
+                        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                    },
+                    {
+                        id: 3,
+                        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                    }
+                ]
+            },
+            {
+                id: 1,
+                title: "Podcast One",
+                url: "/podcast-one",
+                text: [
+                    {
+                        id: 1,
+                        paragraph: "Podcast One - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                    },
+                    {
+                        id: 2,
+                        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                    },
+                    {
+                        id: 3,
+                        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                    }
+                ]
+            },
+            {
+                id: 1,
                 title: "Bunnings Warehouse",
                 url: "/bunnings",
                 text: [
