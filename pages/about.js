@@ -57,10 +57,16 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem 20rem;
+  padding: 1rem 7rem;
+  @media screen and (min-width: 769px) {
+    padding: 1rem 20rem;
+  }
   font-family: Courier, Helvetica Neue, sans-serif;
   h1 {
-    padding: 5rem 0 0 0;
+    padding: 7rem 0 0 0;
+    @media screen and (min-width: 769px) {
+      padding: 5rem 0 0 0;
+    }
   }
 }
 `;

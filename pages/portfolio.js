@@ -21,21 +21,21 @@ export default function Index() {
       <Logo />
       <Nav />
       {data.map(item => (
-            <Content>
-                <h1>{item.title}</h1>
-                {item.companies.map(i => (
-                    <div>
-                        <h2>{i.title}</h2> 
-                        {i.text.map(x => {
-                          const paragraph = <p dangerouslySetInnerHTML={{__html: x.paragraph}}></p>
-                          return (
-                            <div>{paragraph}</div>
-                          )
-                        }
-                      )}
-                    </div>
-                    )
-                )}
+        <Content>
+            <h1>{item.title}</h1>
+            {item.companies.map(i => (
+                <div>
+                    <h2>{i.title}</h2> 
+                    {i.text.map(x => {
+                      const paragraph = <p dangerouslySetInnerHTML={{__html: x.paragraph}}></p>
+                      return (
+                        <div>{paragraph}</div>
+                      )
+                    }
+                  )}
+                </div>
+                )
+            )}
           </Content>
         ))}
         <style jsx global>{`
@@ -60,10 +60,16 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem 20rem;
+  padding: 1rem 7rem;
+  @media screen and (min-width: 769px) {
+    padding: 1rem 20rem;
+  }
   font-family: Courier, Helvetica Neue, sans-serif;
   h1 {
-    padding: 5rem 0 0 0;
+    padding: 7rem 0 0 0;
+    @media screen and (min-width: 769px) {
+      padding: 5rem 0 0 0;
+    }
   }
 }
 `;
