@@ -126,11 +126,28 @@ const Content = styled.div`
   h1 {
     font-size: 1.75rem;
     padding: 0 2rem;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
     @media screen and (min-width: 1025px) {
       font-size: 6rem;
       padding: 0;
     }
   }
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+  }
+  60% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 `;
 
