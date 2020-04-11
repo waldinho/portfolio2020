@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/portfolio.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/services.js"],{
 
 /***/ "./components/Logo.js":
 /*!****************************!*\
@@ -1737,21 +1737,21 @@ module.exports = (__webpack_require__(/*! dll-reference dll_2adc2403d89adc16ead0
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fportfolio&absolutePagePath=%2FUsers%2Fjameswaller%2F2020-portfolio%2Fpages%2Fportfolio.js!./":
-/*!************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fportfolio&absolutePagePath=%2FUsers%2Fjameswaller%2F2020-portfolio%2Fpages%2Fportfolio.js ***!
-  \************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fservices&absolutePagePath=%2FUsers%2Fjameswaller%2F2020-portfolio%2Fpages%2Fservices.js!./":
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fservices&absolutePagePath=%2FUsers%2Fjameswaller%2F2020-portfolio%2Fpages%2Fservices.js ***!
+  \**********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/portfolio", function() {
-      var mod = __webpack_require__(/*! ./pages/portfolio.js */ "./pages/portfolio.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/services", function() {
+      var mod = __webpack_require__(/*! ./pages/services.js */ "./pages/services.js")
       if(true) {
-        module.hot.accept(/*! ./pages/portfolio.js */ "./pages/portfolio.js", function() {
-          if(!next.router.components["/portfolio"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/portfolio.js */ "./pages/portfolio.js")
-          next.router.update("/portfolio", updatedPage)
+        module.hot.accept(/*! ./pages/services.js */ "./pages/services.js", function() {
+          if(!next.router.components["/services"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/services.js */ "./pages/services.js")
+          next.router.update("/services", updatedPage)
         })
       }
       return mod
@@ -16780,10 +16780,10 @@ module.exports = function equal(a, b) {
 
 /***/ }),
 
-/***/ "./pages/portfolio.js":
-/*!****************************!*\
-  !*** ./pages/portfolio.js ***!
-  \****************************/
+/***/ "./pages/services.js":
+/*!***************************!*\
+  !*** ./pages/services.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -16802,7 +16802,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Logo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Logo */ "./components/Logo.js");
 /* harmony import */ var _components_Nav__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Nav */ "./components/Nav.js");
 
-var _jsxFileName = "/Users/jameswaller/2020-portfolio/pages/portfolio.js";
+var _jsxFileName = "/Users/jameswaller/2020-portfolio/pages/services.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
@@ -16832,7 +16832,7 @@ var fetcher = function fetcher(url) {
 function Index() {
   var _this = this;
 
-  var _useSwr = Object(swr__WEBPACK_IMPORTED_MODULE_3__["default"])('/api/portfolio', fetcher),
+  var _useSwr = Object(swr__WEBPACK_IMPORTED_MODULE_3__["default"])('/api/services', fetcher),
       data = _useSwr.data,
       error = _useSwr.error;
 
@@ -16860,7 +16860,7 @@ function Index() {
       columnNumber: 7
     }
   }, __jsx("title", {
-    className: "jsx-539388193",
+    className: "jsx-355972198",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -16870,7 +16870,7 @@ function Index() {
   }, "James Waller | Digital"), __jsx("link", {
     rel: "icon",
     href: "/favicon.ico",
-    className: "jsx-539388193",
+    className: "jsx-355972198",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -16880,7 +16880,7 @@ function Index() {
   }), __jsx("meta", {
     name: "viewport",
     content: "width=device-width, initial-scale=1.0",
-    className: "jsx-539388193",
+    className: "jsx-355972198",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -16902,80 +16902,59 @@ function Index() {
       columnNumber: 7
     }
   }), data.map(function (item) {
+    console.log('item: ', item);
     return __jsx(Content, {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25,
-        columnNumber: 9
+        lineNumber: 27,
+        columnNumber: 11
       }
     }, __jsx("h1", {
-      className: "jsx-539388193",
+      className: "jsx-355972198",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 28,
         columnNumber: 13
       }
-    }, item.title), item.companies.map(function (i) {
-      return __jsx("div", {
-        className: "jsx-539388193",
+    }, item.title), item.service.map(function (i) {
+      console.log('i: ', i);
+      return __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, __jsx("h2", {
+        className: "jsx-355972198",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28,
-          columnNumber: 17
-        }
-      }, __jsx("h2", {
-        className: "jsx-539388193",
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29,
+          lineNumber: 33,
           columnNumber: 21
         }
-      }, i.title), i.text.map(function (x) {
-        var paragraph = __jsx("p", {
-          dangerouslySetInnerHTML: {
-            __html: x.paragraph
-          },
-          className: "jsx-539388193",
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 31,
-            columnNumber: 41
-          }
-        });
-
-        return __jsx("div", {
-          className: "jsx-539388193",
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 33,
-            columnNumber: 25
-          }
-        }, paragraph);
-      }));
+      }, i.title), __jsx("p", {
+        className: "jsx-355972198",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34,
+          columnNumber: 21
+        }
+      }, i.text));
     }));
   }), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    id: "539388193",
+    id: "355972198",
     __self: this
-  }, "html,body{padding:0;margin:0;font-family:Courier,Helvetica Neue,sans-serif;background-color:#000;color:#fff;}*{box-sizing:border-box;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qYW1lc3dhbGxlci8yMDIwLXBvcnRmb2xpby9wYWdlcy9wb3J0Zm9saW8uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBeUMyQixBQUlxQixBQVFZLFVBUGIsU0FDdUMsR0FPbEQsMkNBTndCLHNCQUNYLFdBQ2IiLCJmaWxlIjoiL1VzZXJzL2phbWVzd2FsbGVyLzIwMjAtcG9ydGZvbGlvL3BhZ2VzL3BvcnRmb2xpby5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB1c2VTd3IgZnJvbSAnc3dyJ1xuaW1wb3J0IEhlYWQgZnJvbSAnbmV4dC9oZWFkJ1xuaW1wb3J0IHN0eWxlZCBmcm9tICdzdHlsZWQtY29tcG9uZW50cyc7XG5pbXBvcnQgTG9nbyBmcm9tICcuLi9jb21wb25lbnRzL0xvZ28nXG5pbXBvcnQgTmF2IGZyb20gJy4uL2NvbXBvbmVudHMvTmF2J1xuXG5jb25zdCBmZXRjaGVyID0gdXJsID0+IGZldGNoKHVybCkudGhlbihyZXMgPT4gcmVzLmpzb24oKSlcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSW5kZXgoKSB7XG4gIGNvbnN0IHsgZGF0YSwgZXJyb3IgfSA9IHVzZVN3cignL2FwaS9wb3J0Zm9saW8nLCBmZXRjaGVyKVxuXG4gIGlmIChlcnJvcikgcmV0dXJuIDxkaXY+RmFpbGVkIHRvIGxvYWQgdXNlcnM8L2Rpdj5cbiAgaWYgKCFkYXRhKSByZXR1cm4gPGRpdj5Mb2FkaW5nLi4uPC9kaXY+XG5cbiAgcmV0dXJuIChcbiAgICA8PlxuICAgICAgPEhlYWQ+XG4gICAgICAgIDx0aXRsZT5KYW1lcyBXYWxsZXIgfCBEaWdpdGFsPC90aXRsZT5cbiAgICAgICAgPGxpbmsgcmVsPVwiaWNvblwiIGhyZWY9XCIvZmF2aWNvbi5pY29cIiAvPlxuICAgICAgICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwid2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMFwiLz5cbiAgICAgIDwvSGVhZD5cbiAgICAgIDxMb2dvIC8+XG4gICAgICA8TmF2IC8+XG4gICAgICB7ZGF0YS5tYXAoaXRlbSA9PiAoXG4gICAgICAgIDxDb250ZW50PlxuICAgICAgICAgICAgPGgxPntpdGVtLnRpdGxlfTwvaDE+XG4gICAgICAgICAgICB7aXRlbS5jb21wYW5pZXMubWFwKGkgPT4gKFxuICAgICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgICAgIDxoMj57aS50aXRsZX08L2gyPiBcbiAgICAgICAgICAgICAgICAgICAge2kudGV4dC5tYXAoeCA9PiB7XG4gICAgICAgICAgICAgICAgICAgICAgY29uc3QgcGFyYWdyYXBoID0gPHAgZGFuZ2Vyb3VzbHlTZXRJbm5lckhUTUw9e3tfX2h0bWw6IHgucGFyYWdyYXBofX0+PC9wPlxuICAgICAgICAgICAgICAgICAgICAgIHJldHVybiAoXG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2PntwYXJhZ3JhcGh9PC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgKVxuICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgICApfVxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIClcbiAgICAgICAgICAgICl9XG4gICAgICAgICAgPC9Db250ZW50PlxuICAgICAgICApKX1cbiAgICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgaHRtbCxcbiAgICAgICAgYm9keSB7XG4gICAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgZm9udC1mYW1pbHk6IENvdXJpZXIsIEhlbHZldGljYSBOZXVlLCBzYW5zLXNlcmlmO1xuICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICMwMDA7XG4gICAgICAgICAgY29sb3I6ICNmZmY7XG4gICAgICAgIH1cbiAgXG4gICAgICAgICoge1xuICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cbiAgICA8Lz5cbiAgKVxufVxuXG5jb25zdCBDb250ZW50ID0gc3R5bGVkLmRpdmBcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIHBhZGRpbmc6IDFyZW0gMnJlbTtcbiAgQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogMTAyNXB4KSB7XG4gICAgcGFkZGluZzogMXJlbSAyMHJlbTtcbiAgfVxuICBmb250LWZhbWlseTogQ291cmllciwgSGVsdmV0aWNhIE5ldWUsIHNhbnMtc2VyaWY7XG4gIGgxIHtcbiAgICBwYWRkaW5nOiA3cmVtIDAgMCAwO1xuICB9XG59XG5gOyJdfQ== */\n/*@ sourceURL=/Users/jameswaller/2020-portfolio/pages/portfolio.js */"));
+  }, "html,body{padding:0;margin:0;font-family:Courier,Helvetica Neue,sans-serif;background-color:#000;color:#fff;}*{box-sizing:border-box;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qYW1lc3dhbGxlci8yMDIwLXBvcnRmb2xpby9wYWdlcy9zZXJ2aWNlcy5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF5Q3lCLEFBSXFCLEFBUVksVUFQYixTQUN1QyxHQU9oRCwyQ0FOc0Isc0JBQ1gsV0FDWCIsImZpbGUiOiIvVXNlcnMvamFtZXN3YWxsZXIvMjAyMC1wb3J0Zm9saW8vcGFnZXMvc2VydmljZXMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgdXNlU3dyIGZyb20gJ3N3cidcbmltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCdcbmltcG9ydCBzdHlsZWQgZnJvbSAnc3R5bGVkLWNvbXBvbmVudHMnO1xuaW1wb3J0IExvZ28gZnJvbSAnLi4vY29tcG9uZW50cy9Mb2dvJ1xuaW1wb3J0IE5hdiBmcm9tICcuLi9jb21wb25lbnRzL05hdidcblxuY29uc3QgZmV0Y2hlciA9IHVybCA9PiBmZXRjaCh1cmwpLnRoZW4ocmVzID0+IHJlcy5qc29uKCkpXG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEluZGV4KCkge1xuICBjb25zdCB7IGRhdGEsIGVycm9yIH0gPSB1c2VTd3IoJy9hcGkvc2VydmljZXMnLCBmZXRjaGVyKVxuXG4gIGlmIChlcnJvcikgcmV0dXJuIDxkaXY+RmFpbGVkIHRvIGxvYWQgdXNlcnM8L2Rpdj5cbiAgaWYgKCFkYXRhKSByZXR1cm4gPGRpdj5Mb2FkaW5nLi4uPC9kaXY+XG5cbiAgcmV0dXJuIChcbiAgICA8PlxuICAgICAgPEhlYWQ+XG4gICAgICAgIDx0aXRsZT5KYW1lcyBXYWxsZXIgfCBEaWdpdGFsPC90aXRsZT5cbiAgICAgICAgPGxpbmsgcmVsPVwiaWNvblwiIGhyZWY9XCIvZmF2aWNvbi5pY29cIiAvPlxuICAgICAgICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwid2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMFwiLz5cbiAgICAgIDwvSGVhZD5cbiAgICAgIDxMb2dvIC8+XG4gICAgICA8TmF2IC8+XG4gICAgICB7ZGF0YS5tYXAoaXRlbSA9PiB7XG4gICAgICAgIGNvbnNvbGUubG9nKCdpdGVtOiAnLCBpdGVtKVxuICAgICAgICByZXR1cm4gKFxuICAgICAgICAgIDxDb250ZW50PlxuICAgICAgICAgICAgPGgxPntpdGVtLnRpdGxlfTwvaDE+XG4gICAgICAgICAgICB7aXRlbS5zZXJ2aWNlLm1hcChpID0+IHtcbiAgICAgICAgICAgICAgY29uc29sZS5sb2coJ2k6ICcsIGkpXG4gICAgICAgICAgICAgIHJldHVybiAoXG4gICAgICAgICAgICAgICAgPD5cbiAgICAgICAgICAgICAgICAgICAgPGgyPntpLnRpdGxlfTwvaDI+XG4gICAgICAgICAgICAgICAgICAgIDxwPntpLnRleHR9PC9wPiAgXG4gICAgICAgICAgICAgICAgPC8+XG4gICAgICAgICAgICAgIClcbiAgICAgICAgICAgIH0pfVxuICAgICAgICAgIDwvQ29udGVudD5cbiAgICAgICAgKVxuICAgICAgfVxuICAgICAgKX1cbiAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICAgICAgaHRtbCxcbiAgICAgICAgICBib2R5IHtcbiAgICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICBmb250LWZhbWlseTogQ291cmllciwgSGVsdmV0aWNhIE5ldWUsIHNhbnMtc2VyaWY7XG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzAwMDtcbiAgICAgICAgICBjb2xvcjogI2ZmZjtcbiAgICAgICAgICB9XG4gIFxuICAgICAgICAgICoge1xuICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gICAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgIDwvPlxuICApXG59XG5cbmNvbnN0IENvbnRlbnQgPSBzdHlsZWQuZGl2YFxuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgcGFkZGluZzogMXJlbSAycmVtO1xuICBAbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiAxMDI1cHgpIHtcbiAgICBwYWRkaW5nOiAxcmVtIDIwcmVtO1xuICB9XG4gIGZvbnQtZmFtaWx5OiBDb3VyaWVyLCBIZWx2ZXRpY2EgTmV1ZSwgc2Fucy1zZXJpZjtcbiAgaDEge1xuICAgIHBhZGRpbmc6IDdyZW0gMCAwIDA7XG4gIH1cbn1cbmA7Il19 */\n/*@ sourceURL=/Users/jameswaller/2020-portfolio/pages/services.js */"));
 }
 var Content = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div(_templateObject());
 
 /***/ }),
 
-/***/ 2:
-/*!****************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fportfolio&absolutePagePath=%2FUsers%2Fjameswaller%2F2020-portfolio%2Fpages%2Fportfolio.js ***!
-  \****************************************************************************************************************************************/
+/***/ 3:
+/*!**************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fservices&absolutePagePath=%2FUsers%2Fjameswaller%2F2020-portfolio%2Fpages%2Fservices.js ***!
+  \**************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fportfolio&absolutePagePath=%2FUsers%2Fjameswaller%2F2020-portfolio%2Fpages%2Fportfolio.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fportfolio&absolutePagePath=%2FUsers%2Fjameswaller%2F2020-portfolio%2Fpages%2Fportfolio.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fservices&absolutePagePath=%2FUsers%2Fjameswaller%2F2020-portfolio%2Fpages%2Fservices.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fservices&absolutePagePath=%2FUsers%2Fjameswaller%2F2020-portfolio%2Fpages%2Fservices.js!./");
 
 
 /***/ }),
@@ -16991,5 +16970,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=portfolio.js.map
+},[[3,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=services.js.map
