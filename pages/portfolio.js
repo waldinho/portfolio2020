@@ -17,6 +17,7 @@ export default function Index() {
       <Head>
         <title>James Waller | Digital</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       </Head>
       <Logo />
       <Nav />
@@ -60,16 +61,13 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem 7rem;
-  @media screen and (min-width: 769px) {
+  padding: 1rem 2rem;
+  @media screen and (min-width: 1025px) {
     padding: 1rem 20rem;
   }
   font-family: Courier, Helvetica Neue, sans-serif;
   h1 {
     padding: 7rem 0 0 0;
-    @media screen and (min-width: 769px) {
-      padding: 5rem 0 0 0;
-    }
   }
 }
 `;

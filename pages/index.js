@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import React, { Component } from "react";
+import styled from 'styled-components';
 import FluidAnimation from "react-fluid-animation";
 import random from "random";
 import Logo from '../components/Logo'
@@ -44,6 +45,7 @@ export default class Home extends Component {
       <Head>
         <title>James Waller | Digital</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>>
       </Head>
       <Logo />
       <Nav />
@@ -54,31 +56,11 @@ export default class Home extends Component {
       >
         <FluidAnimation config={config} animationRef={this._animationRef} />
 
-        <div
-          style={{
-            position: "absolute",
-            zIndex: 1,
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            padding: "1em 10em",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "left",
-            color: "#fff",
-            pointerEvents: "none"
-          }}
-        >
-          <h1
-            style={{
-              fontSize: "6em",
-            }}
-          >
+        <Content>
+          <h1>
             _Good_{greeting()}.
           </h1>
-        </div>
+        </Content>
       </div>
   
       <style jsx global>{`
@@ -122,3 +104,33 @@ export default class Home extends Component {
     }
   }
 }
+
+const Content = styled.div`
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  color: #fff;
+  pointer-events: none
+  padding: 1rem 2rem;
+  @media screen and (min-width: 1025px) {
+    padding: 1rem 10rem;
+  }
+  font-family: Courier, Helvetica Neue, sans-serif;
+  h1 {
+    font-size: 1.75rem;
+    padding: 0 2rem;
+    @media screen and (min-width: 1025px) {
+      font-size: 6rem;
+      padding: 0;
+    }
+  }
+}
+`;
+

@@ -25,6 +25,14 @@ export default props => {
       </a>
     </Menu>
     <style jsx global>{`
+        .bm-menu-wrap {
+          width: 100% !important;
+        }
+        @media screen and (min-width: 426px) {
+          .bm-menu-wrap {
+            width: 300px !important;
+          }
+        }
         /* Individual item */
         .bm-item {
           display: inline-block;
