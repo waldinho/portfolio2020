@@ -40,11 +40,6 @@ export default props => {
           outline:0;
         }
 
-        .bm-item:active {
-          color: #4663ff;
-        }
-
-
         /* Change color on hover */
         .bm-item:hover {
           color: #31deff;

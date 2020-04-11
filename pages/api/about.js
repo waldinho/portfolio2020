@@ -8,7 +8,7 @@ const about = [{
       },
       {
           id: 2,
-          text: 'I live in Sydney, Australia, after working in London, England for 9 years as a Front End Developer / UX Designer and graduating as a Bachelor of Multimedia Technology from Leeds Metropolitan University, England in 2006.',
+          text: 'I live in Sydney, Australia, after working in London, England for 11 years as a Front End Developer / UX Designer and graduating as a Bachelor of Multimedia Technology from Leeds Metropolitan University, England in 2006.',
       },
       {
           id: 3,
@@ -38,6 +38,5 @@ const about = [{
 ]
 
 export default (req, res) => {
-  // Get data from your database
   res.status(200).json(about)
 }
