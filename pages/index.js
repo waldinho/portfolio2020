@@ -130,7 +130,7 @@ const Content = styled.div`
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 4s;
+    animation-duration: 5s;
     @media screen and (min-width: 1025px) {
       font-size: 6rem;
       padding: 0;
