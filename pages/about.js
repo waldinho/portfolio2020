@@ -5,7 +5,7 @@ import Nav from '../components/Nav'
 import useSWR from 'swr'
 
 const fetcher = query =>
-  fetch('/api/about', {
+  fetch('/api/graphQL/about', {
     method: 'POST',
     headers: {
       'Content-type': 'application/json',

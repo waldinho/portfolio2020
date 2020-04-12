@@ -71,4 +71,4 @@ export const config = {
   },
 }
 
-export default apolloServer.createHandler({ path: '/api/about' })
+export default apolloServer.createHandler({ path: '/api/graphQL/about' })

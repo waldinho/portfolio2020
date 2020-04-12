@@ -12,6 +12,7 @@ const typeDefs = gql`
     id: ID,
     title: String,
     url: String,
+    target: String,
   }
 `
 
@@ -46,7 +47,8 @@ const resolvers = {
         {
             id: 5,
             title: 'Resume',
-            url: '/resume',
+            url: '/resume.pdf',
+            target: '_blank'
         }
     ]},
   },
@@ -60,4 +62,4 @@ export const config = {
   },
 }
 
-export default apolloServer.createHandler({ path: '/api/nav' })
+export default apolloServer.createHandler({ path: '/api/graphQL/nav' })

@@ -15,7 +15,7 @@ const Wrapper = styled.div`
     padding: 1rem 2rem 0rem 2rem;
     z-index: 9;
     h1 {
-        font-family: Impact;
+        font-family: Impact, Helvetica Neue, sans-serif;
         font-size: 4.25rem;   
         line-height: 0;
         color: #4fec8e;

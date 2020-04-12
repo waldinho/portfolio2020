@@ -7,9 +7,9 @@ import Nav from '../components/Nav'
 const fetcher = url => fetch(url).then(res => res.json())
 
 export default function Index() {
-  const { data, error } = useSwr('/api/services', fetcher)
+  const { data, error } = useSwr('/api/REST/services', fetcher)
 
-  if (error) return <div>Failed to load users</div>
+  if (error) return <div>Failed to load.</div>
   if (!data) return <div>Loading...</div>
 
   return (
@@ -22,12 +22,10 @@ export default function Index() {
       <Logo />
       <Nav />
       {data.map(item => {
-        console.log('item: ', item)
         return (
           <Content>
             <h1>{item.title}</h1>
             {item.service.map(i => {
-              console.log('i: ', i)
               return (
                 <>
                     <h2>{i.title}</h2>

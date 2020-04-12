@@ -3,7 +3,7 @@ import { slide as Menu } from "react-burger-menu";
 import useSWR from 'swr'
 
 const fetcher = query =>
-  fetch('/api/nav', {
+  fetch('/api/graphQL/nav', {
     method: 'POST',
     headers: {
       'Content-type': 'application/json',
@@ -14,20 +14,18 @@ const fetcher = query =>
     .then(json => json.data)
 
 export default function Index() {
-  const { data, error } = useSWR('{ title { title }, nav { title, url } }', fetcher)
+  const { data, error } = useSWR('{ title { title }, nav { title, url, target } }', fetcher)
 
   if (error) return <div>Failed to load</div>
   if (!data) return <div>Loading...</div>
 
   const { nav } = data
 
-  console.log('data: ', data)
-
   return (
     <>
     <Menu right>
       {nav.map((item, i) => (
-        <a className="menu-item" href={item.url}>{item.title}</a>
+        <a className="menu-item" href={item.url} target={item.target}>{item.title}</a>
       ))}
     </Menu>
     <style jsx global>{`
