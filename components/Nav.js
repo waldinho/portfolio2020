@@ -50,11 +50,12 @@ export default function Index() {
 
     .bm-item:focus {
       outline:0;
+      color: #000;
     }
 
     /* Change color on hover */
     .bm-item:hover {
-      color: #31deff;
+      color: #00adff;
     }
 
     /* The rest copied directly from react-burger-menu docs */

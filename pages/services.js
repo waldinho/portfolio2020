@@ -3,6 +3,7 @@ import Head from 'next/head'
 import styled from 'styled-components';
 import Logo from '../components/Logo'
 import Nav from '../components/Nav'
+import Social from '../components/Social'
 
 const fetcher = url => fetch(url).then(res => res.json())
 
@@ -23,6 +24,7 @@ export default function Index() {
       </Head>
       <Logo />
       <Nav />
+      <Social />
       {data.map(item => {
         return (
         <>
@@ -70,7 +72,7 @@ const Wrapper = styled.div`
   }
   width: 100%;
   align-items: flex-start;
-  padding: 0 2rem;
+  padding: 0 2rem 7rem 2rem;
   @media screen and (min-width: 1025px) {
     padding: 0 20rem;
   }

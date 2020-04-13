@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styled from 'styled-components';
 import Logo from '../components/Logo'
 import Nav from '../components/Nav'
+import Social from '../components/Social'
 import useSWR from 'swr'
 
 const fetcher = query =>
@@ -34,6 +35,7 @@ export default function Index() {
     </Head>
     <Logo />
     <Nav />
+    <Social />
     <Content>
       <h1>{title[0].title}</h1>
       {paragraph.map(item => (
@@ -63,7 +65,7 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 7rem 2rem;
   @media screen and (min-width: 1025px) {
     padding: 1rem 20rem;
   }
