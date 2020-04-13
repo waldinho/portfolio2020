@@ -1,5 +1,5 @@
 const portfolio = [{
-        title: "Portfolio",
+        title: "Work",
         companies: [
             {
                 id: 1,

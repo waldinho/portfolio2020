@@ -83,7 +83,7 @@ const Title = styled.div`
         padding: 0 20rem;
     }
     h1 {
-        padding: 8rem 0 0 0;
+        padding: 9.4rem 0 0 0;
     }
 }
 `;
@@ -103,11 +103,11 @@ const Content = styled.div`
       width: 180px;
       height: 180px;
       border-radius: 50%;
-      margin: 0 auto 15px auto;
+      margin: 15px auto 15px auto;
     }
     h2 {
         height: 32px;
-        font-size: 14px;
+        font-size: 16px;
         position: relative;
     }
     p {

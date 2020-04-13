@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/services.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/work.js"],{
 
 /***/ "./components/Logo.js":
 /*!****************************!*\
@@ -1745,21 +1745,21 @@ module.exports = (__webpack_require__(/*! dll-reference dll_2adc2403d89adc16ead0
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fservices&absolutePagePath=%2FUsers%2Fjameswaller%2F2020-portfolio%2Fpages%2Fservices.js!./":
-/*!**********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fservices&absolutePagePath=%2FUsers%2Fjameswaller%2F2020-portfolio%2Fpages%2Fservices.js ***!
-  \**********************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fwork&absolutePagePath=%2FUsers%2Fjameswaller%2F2020-portfolio%2Fpages%2Fwork.js!./":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fwork&absolutePagePath=%2FUsers%2Fjameswaller%2F2020-portfolio%2Fpages%2Fwork.js ***!
+  \**************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/services", function() {
-      var mod = __webpack_require__(/*! ./pages/services.js */ "./pages/services.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/work", function() {
+      var mod = __webpack_require__(/*! ./pages/work.js */ "./pages/work.js")
       if(true) {
-        module.hot.accept(/*! ./pages/services.js */ "./pages/services.js", function() {
-          if(!next.router.components["/services"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/services.js */ "./pages/services.js")
-          next.router.update("/services", updatedPage)
+        module.hot.accept(/*! ./pages/work.js */ "./pages/work.js", function() {
+          if(!next.router.components["/work"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/work.js */ "./pages/work.js")
+          next.router.update("/work", updatedPage)
         })
       }
       return mod
@@ -16788,10 +16788,10 @@ module.exports = function equal(a, b) {
 
 /***/ }),
 
-/***/ "./pages/services.js":
-/*!***************************!*\
-  !*** ./pages/services.js ***!
-  \***************************/
+/***/ "./pages/work.js":
+/*!***********************!*\
+  !*** ./pages/work.js ***!
+  \***********************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -16810,13 +16810,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Logo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Logo */ "./components/Logo.js");
 /* harmony import */ var _components_Nav__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Nav */ "./components/Nav.js");
 
-var _jsxFileName = "/Users/jameswaller/2020-portfolio/pages/services.js";
+var _jsxFileName = "/Users/jameswaller/2020-portfolio/pages/work.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
+function _templateObject4() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  background: #4fec8e;\n  padding: 0 1rem 1rem 1rem;\n  font-size: 12px;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject3() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    padding: 1rem 1rem;\n    width: 100%;\n    @media screen and (min-width: 1025px) {\n        width: 25%;\n    }\n    text-align: center;\n    font-family: Courier, Helvetica Neue, sans-serif;\n    img {\n      width: 180px;\n      height: 180px;\n      border-radius: 50%;\n      margin: 15px auto 15px auto;\n    }\n    h2 {\n        height: 32px;\n        font-size: 16px;\n        position: relative;\n    }\n    p {\n        font-size: 12px;\n    }\n}\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  text-align: center;\n  img {\n    max-width: 150px;\n    padding: 0rem;\n    @media screen and (min-width: 426px) {\n      padding: 1rem;\n    }\n    @media screen and (min-width: 1025px) {\n      max-width: 200px;\n      padding: 2rem;\n    }\n  }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -16826,7 +16836,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    padding: 0 2rem;\n    @media screen and (min-width: 1025px) {\n        padding: 0 20rem;\n    }\n    h1 {\n        padding: 9.4rem 0 0 0;\n    }\n}\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: flex;\n  flex-direction: column;\n  @media screen and (min-width: 426px) {\n    flex-direction: row;\n  }\n  background: #fff;\n  margin: 0 0 1rem 0;\n  color: #000;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -16836,7 +16846,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: flex;\n  flex-direction: column;\n  @media screen and (min-width: 1025px) {\n    flex-direction: row;\n  }\n  width: 100%;\n  align-items: flex-start;\n  padding: 0 2rem;\n  @media screen and (min-width: 1025px) {\n    padding: 0 20rem;\n  }\n}\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  padding: 1rem 2rem;\n  @media screen and (min-width: 1025px) {\n    padding: 1rem 20rem;\n  }\n  font-family: Courier, Helvetica Neue, sans-serif;\n  h1 {\n    padding: 7rem 0 0 0;\n  }\n}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -16860,7 +16870,7 @@ var fetcher = function fetcher(url) {
 function Index() {
   var _this = this;
 
-  var _useSwr = Object(swr__WEBPACK_IMPORTED_MODULE_3__["default"])('/api/REST/services', fetcher),
+  var _useSwr = Object(swr__WEBPACK_IMPORTED_MODULE_3__["default"])('/api/REST/portfolio', fetcher),
       data = _useSwr.data,
       error = _useSwr.error;
 
@@ -16880,133 +16890,155 @@ function Index() {
       columnNumber: 21
     }
   }, "Loading...");
-  console.log(data);
   return __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 17,
       columnNumber: 7
     }
   }, __jsx("title", {
-    className: "jsx-2696680752",
+    className: "jsx-539388193",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 9
+    }
+  }, "James Waller | Digital"), __jsx("link", {
+    rel: "icon",
+    href: "/favicon.ico",
+    className: "jsx-539388193",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 9
+    }
+  }), __jsx("meta", {
+    name: "viewport",
+    content: "width=device-width, initial-scale=1.0",
+    className: "jsx-539388193",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20,
       columnNumber: 9
     }
-  }, "James Waller | Digital"), __jsx("link", {
-    rel: "icon",
-    href: "/favicon.ico",
-    className: "jsx-2696680752",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 9
-    }
-  }), __jsx("meta", {
-    name: "viewport",
-    content: "width=device-width, initial-scale=1.0",
-    className: "jsx-2696680752",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 9
-    }
   })), __jsx(_components_Logo__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 22,
       columnNumber: 7
     }
   }), __jsx(_components_Nav__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 23,
       columnNumber: 7
     }
   }), data.map(function (item) {
-    return __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, __jsx(Title, {
+    return __jsx(Content, {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
-        columnNumber: 13
+        lineNumber: 25,
+        columnNumber: 9
       }
     }, __jsx("h1", {
-      className: "jsx-2696680752",
+      className: "jsx-539388193",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30,
-        columnNumber: 17
-      }
-    }, item.title)), __jsx(Wrapper, {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 32,
+        lineNumber: 26,
         columnNumber: 13
       }
-    }, item.service.map(function (i) {
-      return __jsx(Content, {
+    }, item.title), item.companies.map(function (i) {
+      return __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, __jsx(Company, {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35,
+          lineNumber: 29,
           columnNumber: 17
         }
+      }, __jsx(CompanyLogo, {
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30,
+          columnNumber: 21
+        }
+      }, __jsx("img", {
+        src: "/images/company-".concat(i.id, ".png"),
+        className: "jsx-539388193",
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31,
+          columnNumber: 23
+        }
+      })), __jsx(CompanyText, {
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 21
+        }
       }, __jsx("h2", {
-        className: "jsx-2696680752",
+        className: "jsx-539388193",
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36,
+          lineNumber: 34,
           columnNumber: 21
         }
-      }, i.title), __jsx("img", {
-        src: "/images/service-".concat(i.id, ".png"),
-        className: "jsx-2696680752",
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 37,
-          columnNumber: 21
-        }
-      }), __jsx("p", {
-        className: "jsx-2696680752",
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 38,
-          columnNumber: 21
-        }
-      }, i.text));
-    })));
+      }, i.title), i.text.map(function (x) {
+        var paragraph = __jsx("p", {
+          dangerouslySetInnerHTML: {
+            __html: x.paragraph
+          },
+          className: "jsx-539388193",
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 36,
+            columnNumber: 43
+          }
+        });
+
+        return __jsx("div", {
+          className: "jsx-539388193",
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 38,
+            columnNumber: 27
+          }
+        }, paragraph);
+      }))));
+    }));
   }), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    id: "2696680752",
+    id: "539388193",
     __self: this
-  }, "html,body{padding:0;margin:-11px 0 0 0;font-family:Courier,Helvetica Neue,sans-serif;background-color:#000;color:#fff;}*{box-sizing:border-box;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qYW1lc3dhbGxlci8yMDIwLXBvcnRmb2xpby9wYWdlcy9zZXJ2aWNlcy5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE4Q3lCLEFBSXFCLEFBUVksVUFQSCxZQVFuQixPQVBnRCw4Q0FDMUIsc0JBQ1gsV0FDWCIsImZpbGUiOiIvVXNlcnMvamFtZXN3YWxsZXIvMjAyMC1wb3J0Zm9saW8vcGFnZXMvc2VydmljZXMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgdXNlU3dyIGZyb20gJ3N3cidcbmltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCdcbmltcG9ydCBzdHlsZWQgZnJvbSAnc3R5bGVkLWNvbXBvbmVudHMnO1xuaW1wb3J0IExvZ28gZnJvbSAnLi4vY29tcG9uZW50cy9Mb2dvJ1xuaW1wb3J0IE5hdiBmcm9tICcuLi9jb21wb25lbnRzL05hdidcblxuY29uc3QgZmV0Y2hlciA9IHVybCA9PiBmZXRjaCh1cmwpLnRoZW4ocmVzID0+IHJlcy5qc29uKCkpXG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEluZGV4KCkge1xuICBjb25zdCB7IGRhdGEsIGVycm9yIH0gPSB1c2VTd3IoJy9hcGkvUkVTVC9zZXJ2aWNlcycsIGZldGNoZXIpXG5cbiAgaWYgKGVycm9yKSByZXR1cm4gPGRpdj5GYWlsZWQgdG8gbG9hZC48L2Rpdj5cbiAgaWYgKCFkYXRhKSByZXR1cm4gPGRpdj5Mb2FkaW5nLi4uPC9kaXY+XG5cbiAgY29uc29sZS5sb2coZGF0YSlcblxuICByZXR1cm4gKFxuICAgIDw+XG4gICAgICA8SGVhZD5cbiAgICAgICAgPHRpdGxlPkphbWVzIFdhbGxlciB8IERpZ2l0YWw8L3RpdGxlPlxuICAgICAgICA8bGluayByZWw9XCJpY29uXCIgaHJlZj1cIi9mYXZpY29uLmljb1wiIC8+XG4gICAgICAgIDxtZXRhIG5hbWU9XCJ2aWV3cG9ydFwiIGNvbnRlbnQ9XCJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wXCIvPlxuICAgICAgPC9IZWFkPlxuICAgICAgPExvZ28gLz5cbiAgICAgIDxOYXYgLz5cbiAgICAgIHtkYXRhLm1hcChpdGVtID0+IHtcbiAgICAgICAgcmV0dXJuIChcbiAgICAgICAgPD5cbiAgICAgICAgICAgIDxUaXRsZT5cbiAgICAgICAgICAgICAgICA8aDE+e2l0ZW0udGl0bGV9PC9oMT5cbiAgICAgICAgICAgIDwvVGl0bGU+XG4gICAgICAgICAgICA8V3JhcHBlcj5cbiAgICAgICAgICAgIHtpdGVtLnNlcnZpY2UubWFwKGkgPT4ge1xuICAgICAgICAgICAgICByZXR1cm4gKFxuICAgICAgICAgICAgICAgIDxDb250ZW50PlxuICAgICAgICAgICAgICAgICAgICA8aDI+e2kudGl0bGV9PC9oMj5cbiAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9e2AvaW1hZ2VzL3NlcnZpY2UtJHtpLmlkfS5wbmdgfS8+XG4gICAgICAgICAgICAgICAgICAgIDxwPntpLnRleHR9PC9wPiAgXG4gICAgICAgICAgICAgICAgPC9Db250ZW50PlxuICAgICAgICAgICAgICApXG4gICAgICAgICAgICB9KX1cbiAgICAgICAgICAgIDwvV3JhcHBlcj5cbiAgICAgICAgPC8+XG4gICAgICAgIClcbiAgICAgIH1cbiAgICAgICl9XG4gICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgICAgIGh0bWwsXG4gICAgICAgICAgYm9keSB7XG4gICAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgICBtYXJnaW46IC0xMXB4IDAgMCAwO1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiBDb3VyaWVyLCBIZWx2ZXRpY2EgTmV1ZSwgc2Fucy1zZXJpZjtcbiAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDAwO1xuICAgICAgICAgIGNvbG9yOiAjZmZmO1xuICAgICAgICAgIH1cbiAgXG4gICAgICAgICAgKiB7XG4gICAgICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC8+XG4gIClcbn1cblxuY29uc3QgV3JhcHBlciA9IHN0eWxlZC5kaXZgXG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIEBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDEwMjVweCkge1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIH1cbiAgd2lkdGg6IDEwMCU7XG4gIGFsaWduLWl0ZW1zOiBmbGV4LXN0YXJ0O1xuICBwYWRkaW5nOiAwIDJyZW07XG4gIEBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDEwMjVweCkge1xuICAgIHBhZGRpbmc6IDAgMjByZW07XG4gIH1cbn1cbmA7XG5cbmNvbnN0IFRpdGxlID0gc3R5bGVkLmRpdmBcbiAgICBwYWRkaW5nOiAwIDJyZW07XG4gICAgQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogMTAyNXB4KSB7XG4gICAgICAgIHBhZGRpbmc6IDAgMjByZW07XG4gICAgfVxuICAgIGgxIHtcbiAgICAgICAgcGFkZGluZzogOS40cmVtIDAgMCAwO1xuICAgIH1cbn1cbmA7XG5cbmNvbnN0IENvbnRlbnQgPSBzdHlsZWQuZGl2YFxuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBwYWRkaW5nOiAxcmVtIDFyZW07XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogMTAyNXB4KSB7XG4gICAgICAgIHdpZHRoOiAyNSU7XG4gICAgfVxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBmb250LWZhbWlseTogQ291cmllciwgSGVsdmV0aWNhIE5ldWUsIHNhbnMtc2VyaWY7XG4gICAgaW1nIHtcbiAgICAgIHdpZHRoOiAxODBweDtcbiAgICAgIGhlaWdodDogMTgwcHg7XG4gICAgICBib3JkZXItcmFkaXVzOiA1MCU7XG4gICAgICBtYXJnaW46IDE1cHggYXV0byAxNXB4IGF1dG87XG4gICAgfVxuICAgIGgyIHtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICB9XG4gICAgcCB7XG4gICAgICAgIGZvbnQtc2l6ZTogMTJweDtcbiAgICB9XG59XG5gOyJdfQ== */\n/*@ sourceURL=/Users/jameswaller/2020-portfolio/pages/services.js */"));
+  }, "html,body{padding:0;margin:0;font-family:Courier,Helvetica Neue,sans-serif;background-color:#000;color:#fff;}*{box-sizing:border-box;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qYW1lc3dhbGxlci8yMDIwLXBvcnRmb2xpby9wYWdlcy93b3JrLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWdEMkIsQUFJcUIsQUFRWSxVQVBiLFNBQ3VDLEdBT2xELDJDQU53QixzQkFDWCxXQUNiIiwiZmlsZSI6Ii9Vc2Vycy9qYW1lc3dhbGxlci8yMDIwLXBvcnRmb2xpby9wYWdlcy93b3JrLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHVzZVN3ciBmcm9tICdzd3InXG5pbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnXG5pbXBvcnQgc3R5bGVkIGZyb20gJ3N0eWxlZC1jb21wb25lbnRzJztcbmltcG9ydCBMb2dvIGZyb20gJy4uL2NvbXBvbmVudHMvTG9nbydcbmltcG9ydCBOYXYgZnJvbSAnLi4vY29tcG9uZW50cy9OYXYnXG5cbmNvbnN0IGZldGNoZXIgPSB1cmwgPT4gZmV0Y2godXJsKS50aGVuKHJlcyA9PiByZXMuanNvbigpKVxuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBJbmRleCgpIHtcbiAgY29uc3QgeyBkYXRhLCBlcnJvciB9ID0gdXNlU3dyKCcvYXBpL1JFU1QvcG9ydGZvbGlvJywgZmV0Y2hlcilcblxuICBpZiAoZXJyb3IpIHJldHVybiA8ZGl2PkZhaWxlZCB0byBsb2FkLjwvZGl2PlxuICBpZiAoIWRhdGEpIHJldHVybiA8ZGl2PkxvYWRpbmcuLi48L2Rpdj5cblxuICByZXR1cm4gKFxuICAgIDw+XG4gICAgICA8SGVhZD5cbiAgICAgICAgPHRpdGxlPkphbWVzIFdhbGxlciB8IERpZ2l0YWw8L3RpdGxlPlxuICAgICAgICA8bGluayByZWw9XCJpY29uXCIgaHJlZj1cIi9mYXZpY29uLmljb1wiIC8+XG4gICAgICAgIDxtZXRhIG5hbWU9XCJ2aWV3cG9ydFwiIGNvbnRlbnQ9XCJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wXCIvPlxuICAgICAgPC9IZWFkPlxuICAgICAgPExvZ28gLz5cbiAgICAgIDxOYXYgLz5cbiAgICAgIHtkYXRhLm1hcChpdGVtID0+IChcbiAgICAgICAgPENvbnRlbnQ+XG4gICAgICAgICAgICA8aDE+e2l0ZW0udGl0bGV9PC9oMT5cbiAgICAgICAgICAgIHtpdGVtLmNvbXBhbmllcy5tYXAoaSA9PiAoXG4gICAgICAgICAgICAgIDw+XG4gICAgICAgICAgICAgICAgPENvbXBhbnk+XG4gICAgICAgICAgICAgICAgICAgIDxDb21wYW55TG9nbz5cbiAgICAgICAgICAgICAgICAgICAgICA8aW1nIHNyYz17YC9pbWFnZXMvY29tcGFueS0ke2kuaWR9LnBuZ2B9Lz5cbiAgICAgICAgICAgICAgICAgICAgPC9Db21wYW55TG9nbz5cbiAgICAgICAgICAgICAgICAgICAgPENvbXBhbnlUZXh0PlxuICAgICAgICAgICAgICAgICAgICA8aDI+e2kudGl0bGV9PC9oMj4gXG4gICAgICAgICAgICAgICAgICAgICAge2kudGV4dC5tYXAoeCA9PiB7XG4gICAgICAgICAgICAgICAgICAgICAgICBjb25zdCBwYXJhZ3JhcGggPSA8cCBkYW5nZXJvdXNseVNldElubmVySFRNTD17e19faHRtbDogeC5wYXJhZ3JhcGh9fT48L3A+XG4gICAgICAgICAgICAgICAgICAgICAgICByZXR1cm4gKFxuICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2PntwYXJhZ3JhcGh9PC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICApXG4gICAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICApfVxuICAgICAgICAgICAgICAgICAgICA8L0NvbXBhbnlUZXh0PlxuICAgICAgICAgICAgICAgIDwvQ29tcGFueT5cbiAgICAgICAgICAgICAgPC8+XG4gICAgICAgICAgICAgIClcbiAgICAgICAgICAgICl9XG4gICAgICAgICAgPC9Db250ZW50PlxuICAgICAgICApKX1cbiAgICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgaHRtbCxcbiAgICAgICAgYm9keSB7XG4gICAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgZm9udC1mYW1pbHk6IENvdXJpZXIsIEhlbHZldGljYSBOZXVlLCBzYW5zLXNlcmlmO1xuICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICMwMDA7XG4gICAgICAgICAgY29sb3I6ICNmZmY7XG4gICAgICAgIH1cbiAgXG4gICAgICAgICoge1xuICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cbiAgICA8Lz5cbiAgKVxufVxuXG5jb25zdCBDb250ZW50ID0gc3R5bGVkLmRpdmBcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIHBhZGRpbmc6IDFyZW0gMnJlbTtcbiAgQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogMTAyNXB4KSB7XG4gICAgcGFkZGluZzogMXJlbSAyMHJlbTtcbiAgfVxuICBmb250LWZhbWlseTogQ291cmllciwgSGVsdmV0aWNhIE5ldWUsIHNhbnMtc2VyaWY7XG4gIGgxIHtcbiAgICBwYWRkaW5nOiA3cmVtIDAgMCAwO1xuICB9XG59XG5gO1xuXG5jb25zdCBDb21wYW55ID0gc3R5bGVkLmRpdmBcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogNDI2cHgpIHtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICB9XG4gIGJhY2tncm91bmQ6ICNmZmY7XG4gIG1hcmdpbjogMCAwIDFyZW0gMDtcbiAgY29sb3I6ICMwMDA7XG5gO1xuXG5jb25zdCBDb21wYW55TG9nbyA9IHN0eWxlZC5kaXZgXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgaW1nIHtcbiAgICBtYXgtd2lkdGg6IDE1MHB4O1xuICAgIHBhZGRpbmc6IDByZW07XG4gICAgQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogNDI2cHgpIHtcbiAgICAgIHBhZGRpbmc6IDFyZW07XG4gICAgfVxuICAgIEBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDEwMjVweCkge1xuICAgICAgbWF4LXdpZHRoOiAyMDBweDtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgfVxuICB9XG5gO1xuXG5jb25zdCBDb21wYW55VGV4dCA9IHN0eWxlZC5kaXZgXG4gIGJhY2tncm91bmQ6ICM0ZmVjOGU7XG4gIHBhZGRpbmc6IDAgMXJlbSAxcmVtIDFyZW07XG4gIGZvbnQtc2l6ZTogMTJweDtcbmA7Il19 */\n/*@ sourceURL=/Users/jameswaller/2020-portfolio/pages/work.js */"));
 }
-var Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div(_templateObject());
-var Title = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div(_templateObject2());
-var Content = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div(_templateObject3());
+var Content = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div(_templateObject());
+var Company = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div(_templateObject2());
+var CompanyLogo = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div(_templateObject3());
+var CompanyText = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div(_templateObject4());
 
 /***/ }),
 
-/***/ 3:
-/*!**************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fservices&absolutePagePath=%2FUsers%2Fjameswaller%2F2020-portfolio%2Fpages%2Fservices.js ***!
-  \**************************************************************************************************************************************/
+/***/ 2:
+/*!******************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fwork&absolutePagePath=%2FUsers%2Fjameswaller%2F2020-portfolio%2Fpages%2Fwork.js ***!
+  \******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fservices&absolutePagePath=%2FUsers%2Fjameswaller%2F2020-portfolio%2Fpages%2Fservices.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fservices&absolutePagePath=%2FUsers%2Fjameswaller%2F2020-portfolio%2Fpages%2Fservices.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fwork&absolutePagePath=%2FUsers%2Fjameswaller%2F2020-portfolio%2Fpages%2Fwork.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fwork&absolutePagePath=%2FUsers%2Fjameswaller%2F2020-portfolio%2Fpages%2Fwork.js!./");
 
 
 /***/ }),
@@ -17022,5 +17054,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=services.js.map
+},[[2,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=work.js.map
