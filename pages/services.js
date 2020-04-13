@@ -12,6 +12,8 @@ export default function Index() {
   if (error) return <div>Failed to load.</div>
   if (!data) return <div>Loading...</div>
 
+  console.log(data)
+
   return (
     <>
       <Head>
@@ -23,17 +25,22 @@ export default function Index() {
       <Nav />
       {data.map(item => {
         return (
-          <Content>
-            <h1>{item.title}</h1>
+        <>
+            <Title>
+                <h1>{item.title}</h1>
+            </Title>
+            <Wrapper>
             {item.service.map(i => {
               return (
-                <>
+                <Content>
                     <h2>{i.title}</h2>
+                    <img src={`/images/service-${i.id}.png`}/>
                     <p>{i.text}</p>  
-                </>
+                </Content>
               )
             })}
-          </Content>
+            </Wrapper>
+        </>
         )
       }
       )}
@@ -41,7 +48,7 @@ export default function Index() {
           html,
           body {
           padding: 0;
-          margin: 0;
+          margin: -11px 0 0 0;
           font-family: Courier, Helvetica Neue, sans-serif;
           background-color: #000;
           color: #fff;
@@ -55,17 +62,56 @@ export default function Index() {
   )
 }
 
-const Content = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 1rem 2rem;
   @media screen and (min-width: 1025px) {
-    padding: 1rem 20rem;
+    flex-direction: row;
   }
-  font-family: Courier, Helvetica Neue, sans-serif;
-  h1 {
-    padding: 7rem 0 0 0;
+  width: 100%;
+  align-items: flex-start;
+  padding: 0 2rem;
+  @media screen and (min-width: 1025px) {
+    padding: 0 20rem;
   }
+}
+`;
+
+const Title = styled.div`
+    padding: 0 2rem;
+    @media screen and (min-width: 1025px) {
+        padding: 0 20rem;
+    }
+    h1 {
+        padding: 8rem 0 0 0;
+    }
+}
+`;
+
+const Content = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 1rem;
+    width: 100%;
+    @media screen and (min-width: 1025px) {
+        width: 25%;
+    }
+    text-align: center;
+    font-family: Courier, Helvetica Neue, sans-serif;
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      margin: 0 auto 15px auto;
+    }
+    h2 {
+        height: 32px;
+        font-size: 14px;
+        position: relative;
+    }
+    p {
+        font-size: 12px;
+    }
 }
 `;

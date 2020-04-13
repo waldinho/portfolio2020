@@ -21,7 +21,7 @@ const portfolio = [{
                 ]
             },
             {
-                id: 1,
+                id: 2,
                 title: "Triple M",
                 url: "/triple-m",
                 text: [
@@ -40,7 +40,7 @@ const portfolio = [{
                 ]
             },
             {
-                id: 1,
+                id: 3,
                 title: "Podcast One",
                 url: "/podcast-one",
                 text: [
@@ -59,7 +59,7 @@ const portfolio = [{
                 ]
             },
             {
-                id: 1,
+                id: 4,
                 title: "Bunnings Warehouse",
                 url: "/bunnings",
                 text: [
@@ -77,27 +77,27 @@ const portfolio = [{
                     }
                 ]
             },
+            // {
+            //     id: 5,
+            //     title: "Homebase",
+            //     url: "/homebase",
+            //     text: [
+            //         {
+            //             id: 1,
+            //             paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            //         },
+            //         {
+            //             id: 2,
+            //             paragraph: "Homebase - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            //         },
+            //         {
+            //             id: 3,
+            //             paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            //         }
+            //     ]
+            // },
             {
-                id: 2,
-                title: "Homebase",
-                url: "/homebase",
-                text: [
-                    {
-                        id: 1,
-                        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-                    },
-                    {
-                        id: 2,
-                        paragraph: "Homebase - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-                    },
-                    {
-                        id: 3,
-                        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-                    }
-                ]
-            },
-            {
-                id: 3,
+                id: 6,
                 title: "The Independent",
                 url: "/independent",
                 text: [
@@ -120,7 +120,7 @@ const portfolio = [{
                 ]
             },
             {
-                id: 4,
+                id: 7,
                 title: "The Evening Standard",
                 url: "/evening-standard",
                 text: [
@@ -139,7 +139,7 @@ const portfolio = [{
                 ]
             },
             {
-                id: 5,
+                id: 8,
                 title: "eBay",
                 url: "/ebay",
                 text: [
@@ -178,7 +178,7 @@ const portfolio = [{
                 ]
             },
             {
-                id: 6,
+                id: 9,
                 title: "StubHub",
                 url: "/stubhub",
                 text: [
@@ -202,7 +202,7 @@ const portfolio = [{
                 ]
             },
             {
-                id: 7,
+                id: 10,
                 title: "Kurt Geiger",
                 url: "/kurt-geiger",
                 text: [
@@ -217,7 +217,7 @@ const portfolio = [{
                 ]                
             },
             {
-                id: 8,
+                id: 11,
                 title: "Shell",
                 url: "/shell",
                 text: [
@@ -236,7 +236,7 @@ const portfolio = [{
                 ]
             },
             {
-                id: 9,
+                id: 12,
                 title: "Tradefair",
                 url: "/tradefair",
                 text: [
@@ -251,7 +251,7 @@ const portfolio = [{
                 ]
             },
             {
-                id: 10,
+                id: 13,
                 title: "BetVictor",
                 url: "/betvictor",
                 text: [
@@ -270,7 +270,7 @@ const portfolio = [{
                 ]
             },
             {
-                id: 11,
+                id: 14,
                 title: "LCG",
                 url: "/lcg",
                 text: [
@@ -281,7 +281,7 @@ const portfolio = [{
                 ]
             },
             {
-                id: 12,
+                id: 15,
                 title: "The Smalls",
                 url: "/the-smalls",
                 text: [

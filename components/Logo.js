@@ -11,9 +11,14 @@ const Logo = () => {
 }
 
 const Wrapper = styled.div`
-    position: absolute;
+    position: fixed;
     padding: 1rem 2rem 0rem 2rem;
     z-index: 9;
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
     h1 {
         font-family: Impact, Helvetica Neue, sans-serif;
         font-size: 4.25rem;   

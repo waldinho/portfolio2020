@@ -26,12 +26,12 @@ const resolvers = {
     nav(parent, args, context) {
       return [{
             id: 1,
-            title: 'Homepage',
+            title: 'Home',
             url: '/',
         },
         {
             id: 2,
-            title: 'About me',
+            title: 'About',
             url: '/about',
         },
         {
@@ -41,8 +41,8 @@ const resolvers = {
         },
         {
             id: 4,
-            title: 'Portfolio',
-            url: '/portfolio',
+            title: 'Work',
+            url: '/work',
         },
         {
             id: 5,
