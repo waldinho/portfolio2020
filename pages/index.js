@@ -5,6 +5,7 @@ import FluidAnimation from "react-fluid-animation";
 import random from "random";
 import Logo from '../components/Logo'
 import Nav from '../components/Nav'
+import Social from '../components/Social'
 
 const defaultConfig = {
   textureDownsample: 1,
@@ -49,6 +50,7 @@ export default class Home extends Component {
       </Head>
       <Logo />
       <Nav />
+      <Social />
       <div
         style={{
           height: "100vh"
