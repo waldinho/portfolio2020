@@ -17,6 +17,18 @@ const defaultConfig = {
   splatRadius: 0.005
 };
 
+const greeting = () => {
+  const today = new Date()
+  const curHr = today.getHours()
+  if (curHr < 12) {
+      return '_Good_morning.'  
+  } else if (curHr < 17) {
+      return '_Good_afternoon.'  
+  } else {
+      return '_Good_evening.'
+  }
+}
+
 export default class Home extends Component {
   state = {
     config: {
@@ -26,6 +38,16 @@ export default class Home extends Component {
 
   componentDidMount() {
     this._reset();
+    let i = 0;
+    let txt = greeting()
+    let speed = 100;
+    setTimeout(function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }, 3500);
   }
 
   render() {
@@ -59,8 +81,7 @@ export default class Home extends Component {
         <FluidAnimation config={config} animationRef={this._animationRef} />
 
         <Content>
-          <h1>
-            _Good_{greeting()}.
+          <h1 id="demo">
           </h1>
         </Content>
       </div>
@@ -129,10 +150,10 @@ const Content = styled.div`
     font-size: 1.75rem;
     padding: 0 2rem;
     opacity: 1;
-    animation-name: fadeInOpacity;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 5s;
+    // animation-name: fadeInOpacity;
+    // animation-iteration-count: 1;
+    // animation-timing-function: ease-in;
+    // animation-duration: 5s;
     @media screen and (min-width: 1025px) {
       font-size: 6rem;
       padding: 0;
@@ -140,16 +161,16 @@ const Content = styled.div`
   }
 }
 
-@keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-  }
-  60% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-`;
+// @keyframes fadeInOpacity {
+// 	0% {
+// 		opacity: 0;
+//   }
+//   60% {
+// 		opacity: 0;
+// 	}
+// 	100% {
+// 		opacity: 1;
+// 	}
+// }
+// `;
 
