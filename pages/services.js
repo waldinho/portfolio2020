@@ -122,8 +122,8 @@ const Content = styled.div`
     text-align: center;
     font-family: Courier, Helvetica Neue, sans-serif;
     img {
-      width: 100%;
-      height: 100%;
+      width: 70%;
+      height: 70%;
       border-radius: 50%;
       margin: 0 auto 15px auto;
       @media screen and (min-width: 426px) {

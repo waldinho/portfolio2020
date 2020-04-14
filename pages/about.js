@@ -118,8 +118,8 @@ const Images = styled.div`
   }
   img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 70%;
+    height: 70%;
     margin: 1rem auto;
     justify-content: space-between;
     @media screen and (min-width: 456px) {
