@@ -91,7 +91,7 @@ const Content = styled.div`
   justify-content: center;
   padding: 1rem 2rem 7rem 2rem;
   @media screen and (min-width: 1025px) {
-    padding: 1rem 20rem;
+    padding: 1rem 15%;
   }
   font-family: Courier, Helvetica Neue, sans-serif;
   h1 {

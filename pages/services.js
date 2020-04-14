@@ -94,7 +94,7 @@ const Wrapper = styled.div`
   align-items: flex-start;
   padding: 0 2rem 7rem 2rem;
   @media screen and (min-width: 1025px) {
-    padding: 0 20rem;
+    padding: 0 15%;
   }
 }
 `;
@@ -102,7 +102,7 @@ const Wrapper = styled.div`
 const Title = styled.div`
     padding: 0 2rem;
     @media screen and (min-width: 1025px) {
-        padding: 0 20rem;
+        padding: 0 15%;
     }
     h1 {
         padding: 9.4rem 0 0 0;

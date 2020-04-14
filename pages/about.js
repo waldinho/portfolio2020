@@ -95,7 +95,7 @@ const Content = styled.div`
   justify-content: center;
   padding: 1rem 2rem 0rem 2rem;
   @media screen and (min-width: 1025px) {
-    padding: 1rem 20rem;
+    padding: 1rem 15%;
   }
   font-family: Courier, Helvetica Neue, sans-serif;
   h1 {
@@ -114,7 +114,7 @@ const Images = styled.div`
     flex-direction: row;
   }
   @media screen and (min-width: 1025px) {
-    padding: 1rem 20rem;
+    padding: 1rem 15%;
   }
   img {
     border-radius: 50%;
@@ -123,8 +123,8 @@ const Images = styled.div`
     margin: 1rem auto;
     justify-content: space-between;
     @media screen and (min-width: 456px) {
-      width: 120px;
-      height: 120px;
+      width: 15%;
+      height: 15%;
     }
   }
 }
