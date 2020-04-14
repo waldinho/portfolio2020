@@ -87,7 +87,7 @@ export default function Index() {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 426px) {
     flex-direction: row;
   }
   width: 100%;
@@ -125,7 +125,10 @@ const Content = styled.div`
       width: 180px;
       height: 180px;
       border-radius: 50%;
-      margin: 15px auto 15px auto;
+      margin: 10px auto 15px auto;
+      @media screen and (min-width: 426px) {
+        margin: 15px auto 15px auto;
+      }
     }
     h2 {
         height: 32px;
