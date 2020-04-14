@@ -8,15 +8,15 @@ const portfolio = [{
                 text: [
                     {
                         id: 1,
-                        paragraph: "Hit Network - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                        paragraph: "A big part of my role whilst at Southern Cross Austereo was the redesign of the Hit Network website. This was predominately UX/UI focused and involved building out new React components and Next.js pages."
                     },
                     {
                         id: 2,
-                        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                        paragraph: "I worked closely with the product owners and UX/UI designers to ensure that the components and pages we were building were to spec."
                     },
                     {
                         id: 3,
-                        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                        paragraph: "As well as building out these new components and pages we had a big push on test coverage where I wrote a number of unit tests using Jest and Enzyme as well as UI tests using React Testing Library."
                     }
                 ]
             },
@@ -27,15 +27,15 @@ const portfolio = [{
                 text: [
                     {
                         id: 1,
-                        paragraph: "Triple M - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                        paragraph: "The Triple M website was another website I was involved in the daily upkeep and development on while I was at Southern Cross Austereo."
                     },
                     {
                         id: 2,
-                        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                        paragraph: "One of me key achievements while working on the Triple M website was the DAB radio section on the website. This section allowed users to search for their favourite DAB station."
                     },
                     {
                         id: 3,
-                        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                        paragraph: "I was responsible for the creation of the search page with the build of the UI components in React for the page and the layout of the page in Next.js."
                     }
                 ]
             },
@@ -46,15 +46,15 @@ const portfolio = [{
                 text: [
                     {
                         id: 1,
-                        paragraph: "Podcast One - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                        paragraph: "During my time working at Southern Cross Austereo one of the websites I worked on was Podcat One Australaia, this is an online platform that allows users to listen to their favourite podcasts.."
                     },
                     {
                         id: 2,
-                        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                        paragraph: "The stand out project that I worked on with Podcast One Australia was the curated playlists section, this allowed content editors to pick various different episodes from different podcasts and create a playlist with said episodes."
                     },
                     {
                         id: 3,
-                        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                        paragraph: "The tech stack used at Podcast One australia was as follows... React.js, Next.js, GraphQL/Apollo Server, Styled Components and Google Cloud Platform."
                     }
                 ]
             },
@@ -65,15 +65,15 @@ const portfolio = [{
                 text: [
                     {
                         id: 1,
-                        paragraph: "Bunnings Warehouse - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                        paragraph: "At AKQA I worked solely on the Bunnings account, specifically the Bunnings commerce team, my main responsibilities were to impliment new features on the Bunnings web site and bugfix when required. I have implimented a number of features whilst working on the Bunnings website, the most notable being the Team Member discount, Corperage Gift Cards section and PayPal and ZipPay Integration features."
                     },
                     {
                         id: 2,
-                        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                        paragraph: "As you can imagine the Bunnings website is absolutely huge and by far the biggest project I have worked on to date, it is actually the biggest ecommerce project in the southern hempisphere at the moment so I am now very well versed in being part of a large development team and everything that goes with that."
                     },
                     {
                         id: 3,
-                        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                        paragraph: "The front end on the commerce section of the Bunnings website is all React/Redux based and I have now gained significant experience in these technologies, as well as furthing my existing front end skills and ingetrating with the back end setup (Sitecore)."
                     }
                 ]
             },
@@ -109,10 +109,10 @@ const portfolio = [{
                         id: 2,
                         paragraph: "The functionality where the user was able to select thier free gift was built using javascript with the landing page template being built using standard HTML and CSS and the email being sent out to from the form the filled in to the customer support team using a php."
                     },
-                    {
-                        id: 3,
-                        paragraph: "The finished version of the landing page can be found <a href=\"http://www.james-waller.co.uk/loyal-subscribers\" className=\"link-indy\" target=\"_blank\">here</a>."
-                    },
+                    // {
+                    //     id: 3,
+                    //     paragraph: "The finished version of the landing page can be found <a href=\"http://www.james-waller.co.uk/loyal-subscribers\" className=\"link-indy\" target=\"_blank\">here</a>."
+                    // },
                     {
                         id: 4,
                         paragraph: "And, the original designs for the landing page can be perused below. The only change from the original design was to implement a different font on the landing page to what was on the original designs."
@@ -155,26 +155,26 @@ const portfolio = [{
                         id: 3,
                         paragraph: "A common problem eBay were having was that users, whilst on thier site, didn't know the specific tyre type for thier car. So to make this process easier we decided to create a piece of functionality that would find the particular tyres you required by simply typing in you car registration number. This was done by querying a database that eBay had set up with all the different tyre and car varients."
                     },
-                    {
-                        id: 4,
-                        paragraph: "Example:"
-                    },
-                    {
-                        id: 5,
-                        paragraph: "I have also included a couple a landing page and promotional email as examples of other typical pieces of work I would of done on the eBay account."
-                    },
-                    {
-                        id: 6,
-                        paragraph: "Global shipping programme landing page"
-                    },
-                    {
-                        id: 7,
-                        paragraph: "<a href='http://portal.ebay.co.uk/gsp' target='_blank' className='lp-link'>Link</a> to landing page"
-                    },
-                    {
-                        id: 8,
-                        paragraph: "German fashion promotional email"
-                    }
+                    // {
+                    //     id: 4,
+                    //     paragraph: "Example:"
+                    // },
+                    // {
+                    //     id: 5,
+                    //     paragraph: "I have also included a couple a landing page and promotional email as examples of other typical pieces of work I would of done on the eBay account."
+                    // },
+                    // {
+                    //     id: 6,
+                    //     paragraph: "Global shipping programme landing page"
+                    // },
+                    // {
+                    //     id: 7,
+                    //     paragraph: "<a href='http://portal.ebay.co.uk/gsp' target='_blank' className='lp-link'>Link</a> to landing page"
+                    // },
+                    // {
+                    //     id: 8,
+                    //     paragraph: "German fashion promotional email"
+                    // }
                 ]
             },
             {
@@ -193,12 +193,11 @@ const portfolio = [{
                     {
                         id: 3,
                         paragraph: "As well as this we ran a cron job every couple of minutes to update the score as if the scores were live, the functionality of the project was built using php and the templates were structured using handlebars.js. This worked fine at the time, however if I were to build this project again today (January 2018) I would almost definitely use react.js as this would eliminate the need to run a cron job on the server every few minutes to update the scores."
-                    }
-                    ,
-                    {
-                        id: 4,
-                        paragraph: "A screenshot of the finished project can be seen below:"
-                    }
+                    },
+                    // {
+                    //     id: 4,
+                    //     paragraph: "A screenshot of the finished project can be seen below:"
+                    // }
                 ]
             },
             {
