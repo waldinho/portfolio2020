@@ -66,13 +66,18 @@ export default function Index() {
         }
 
         .loader {
-          border: 16px solid #f3f3f3; 
-          border-top: 16px solid #3498db; 
+          border: 16px solid #000;
+          border-top: 16px solid #4fec8e;
           border-radius: 50%;
-          width: 120px;
-          height: 120px;
+          width: 70px;
+          height: 70px;
           animation: spin 2s linear infinite;
           z-index: 9999;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -35px;
+          margin-left: -35px;
         }
     
         @keyframes spin {
