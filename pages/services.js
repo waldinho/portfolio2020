@@ -125,7 +125,7 @@ const Content = styled.div`
       width: 180px;
       height: 180px;
       border-radius: 50%;
-      margin: 10px auto 15px auto;
+      margin: 0 auto 15px auto;
       @media screen and (min-width: 426px) {
         margin: 15px auto 15px auto;
       }
