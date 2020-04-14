@@ -54,7 +54,7 @@ export default function Index() {
     }
     @media screen and (min-width: 426px) {
       .bm-menu-wrap {
-        width: 300px !important;
+        width: 14% !important;
       }
     }
     /* Individual item */
