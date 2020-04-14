@@ -47,7 +47,7 @@ export default class Home extends Component {
         i++;
         setTimeout(typeWriter, speed);
       }
-    }, 3500);
+    }, 4000);
   }
 
   render() {

@@ -17,7 +17,7 @@ export default function Index() {
   const { data, error } = useSWR('{ title { title }, nav { title, url, target } }', fetcher)
 
   if (error) return <div>Failed to load</div>
-  if (!data) return <div>Loading...</div>
+  if (!data) return <div className="loader"></div>
 
   const { nav } = data
 
@@ -29,6 +29,21 @@ export default function Index() {
       ))}
     </Menu>
     <style jsx global>{`
+    .loader {
+      border: 16px solid #f3f3f3; /* Light grey */
+      border-top: 16px solid #3498db; /* Blue */
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      animation: spin 2s linear infinite;
+      z-index: 9999;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
     .bm-menu-wrap {
       width: 100% !important;
     }
