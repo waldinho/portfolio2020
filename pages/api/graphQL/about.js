@@ -33,7 +33,7 @@ const resolvers = {
         },
         {
             id: 2,
-            text: 'I live in Sydney, Australia, after working in London, England for 11 years as a Front End Developer / UX Designer and graduating as a Bachelor of Multimedia Technology from Leeds Metropolitan University, England in 2006.',
+            text: 'I live in Sydney, Australia, after working in London, UK for 11 years as a Front End Developer / UX Designer and graduating as a Bachelor of Multimedia Technology from Leeds Metropolitan University, England in 2006.',
         },
         {
             id: 3,

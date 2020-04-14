@@ -88,117 +88,58 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./pages/api/graphQL/about.js":
+/***/ "./pages/api/REST/services.js":
 /*!************************************!*\
-  !*** ./pages/api/graphQL/about.js ***!
+  !*** ./pages/api/REST/services.js ***!
   \************************************/
-/*! exports provided: config, default */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
-/* harmony import */ var apollo_server_micro__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! apollo-server-micro */ "apollo-server-micro");
-/* harmony import */ var apollo_server_micro__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(apollo_server_micro__WEBPACK_IMPORTED_MODULE_0__);
-
-const typeDefs = apollo_server_micro__WEBPACK_IMPORTED_MODULE_0__["gql"]`
-  type Query {
-    title: [PageTitle!]!,
-    paragraph: [Paragraph!]!,
-    images: [Image!]!,
-  }
-  type PageTitle {
-    title: String,
-  }
-  type Paragraph {
-    id: ID,
-    text: String,
-  }
-  type Image {
-    id: ID,
-  }
-`;
-const resolvers = {
-  Query: {
-    title(parent, args, context) {
-      return [{
-        title: 'About me'
-      }];
-    },
-
-    paragraph(parent, args, context) {
-      return [{
-        id: 1,
-        text: 'My name is James Waller and I am a Web Developer specialising in everything your average web visitor sees and feels. User interface design and front end development.'
-      }, {
-        id: 2,
-        text: 'I live in Sydney, Australia, after working in London, England for 11 years as a Front End Developer / UX Designer and graduating as a Bachelor of Multimedia Technology from Leeds Metropolitan University, England in 2006.'
-      }, {
-        id: 3,
-        text: 'I like creating unique clean sites that are easy to understand and navigate. All my works comply with web standards, use the latest industry techniques and are hand coded.'
-      }];
-    },
-
-    images(parent, args, context) {
-      return [{
-        id: 1
-      }, {
-        id: 2
-      }, {
-        id: 3
-      }, {
-        id: 4
-      }, {
-        id: 5
-      }, {
-        id: 6
-      }];
-    }
-
-  }
-};
-const apolloServer = new apollo_server_micro__WEBPACK_IMPORTED_MODULE_0__["ApolloServer"]({
-  typeDefs,
-  resolvers
+const services = [{
+  id: 1,
+  title: 'Services',
+  service: [{
+    id: 1,
+    title: 'Responsive Web Design',
+    text: 'I have gained extensive experience designing and building many responsive websites. I have developed a personal approach to testing different solutions that brought me to design mostly in the browser.'
+  }, {
+    id: 2,
+    title: 'Interactive Design',
+    text: 'A key area of focus in my design process is to ensure the best interaction for each situation to guide the user through their digital journey, as this is essential in creating engaging and effective user experiences.'
+  }, {
+    id: 3,
+    title: 'Focused Development',
+    text: 'It’s important to discover why you have or want a website in the first place and what you are hoping to achieve with it. I’ll then drill down into the finer details and establish exactly how you will measure the success of your new site.'
+  }, {
+    id: 4,
+    title: 'Social Media Integration',
+    text: 'Social Media has grown rapidly in popularity, but while these tools are easily accessed, planning is paramount. The use of tools like Twitter and Facebook can enhance your marketing efforts, with your website acting as your hub.'
+  }]
+}];
+/* harmony default export */ __webpack_exports__["default"] = ((req, res) => {
+  res.status(200).json(services);
 });
-const config = {
-  api: {
-    bodyParser: false
-  }
-};
-/* harmony default export */ __webpack_exports__["default"] = (apolloServer.createHandler({
-  path: '/api/graphQL/about'
-}));
 
 /***/ }),
 
-/***/ 5:
+/***/ 8:
 /*!******************************************!*\
-  !*** multi ./pages/api/graphQL/about.js ***!
+  !*** multi ./pages/api/REST/services.js ***!
   \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/jameswaller/2020-portfolio/pages/api/graphQL/about.js */"./pages/api/graphQL/about.js");
+module.exports = __webpack_require__(/*! /Users/jameswaller/2020-portfolio/pages/api/REST/services.js */"./pages/api/REST/services.js");
 
-
-/***/ }),
-
-/***/ "apollo-server-micro":
-/*!**************************************!*\
-  !*** external "apollo-server-micro" ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("apollo-server-micro");
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=about.js.map
+//# sourceMappingURL=services.js.map
